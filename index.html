@@ -3,243 +3,183 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Mobility Engineering Institution — From Bearings to Rockets</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Mobility Institution of India</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- NAV -->
   <nav id="navbar">
     <div class="nav-inner">
-      <a class="nav-logo" href="#">MEI</a>
-      <ul class="nav-links">
-        <li><a href="#problem">The Problem</a></li>
-        <li><a href="#pipeline">Pipeline</a></li>
-        <li><a href="#curriculum">Curriculum</a></li>
-        <li><a href="#model">The Model</a></li>
-        <li><a href="#roadmap">Roadmap</a></li>
-        <li><a href="#vision">Vision</a></li>
-      </ul>
-      <a href="#apply" class="btn-nav">Apply Now</a>
-      <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-mii">MII</span>
+        <span class="logo-full">Mobility Institution of India</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
-    </div>
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#problem">The Problem</a>
-      <a href="#pipeline">Pipeline</a>
-      <a href="#curriculum">Curriculum</a>
-      <a href="#model">The Model</a>
-      <a href="#roadmap">Roadmap</a>
-      <a href="#vision">Vision</a>
-      <a href="#apply" class="btn-mobile">Apply Now</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#pipeline">Pipeline</a></li>
+        <li><a href="#curriculum">Curriculum</a></li>
+        <li><a href="#model">Model</a></li>
+        <li><a href="#vision">Vision</a></li>
+        <li><a href="#enquiry" class="nav-cta">Apply / Enquire</a></li>
+      </ul>
     </div>
   </nav>
 
   <!-- HERO -->
-  <header class="hero" id="hero">
-    <div class="hero-bg-text" aria-hidden="true">MEI</div>
+  <section id="hero">
+    <div class="hero-bg-text">MOBILITY</div>
     <div class="hero-content">
-      <p class="hero-eyebrow">A Vision for India's Future</p>
-      <h1 class="hero-title">
-        The Mobility<br/>
-        <span class="hero-title-accent">Engineering</span><br/>
-        Institution
-      </h1>
-      <p class="hero-sub">From Bearings to Rockets — India's First End-to-End Mobility Engineering Ecosystem</p>
-      <p class="hero-caption">Conceived by an Automotive Plastic Design Engineer &nbsp;·&nbsp; A 40-Year Legacy Project</p>
-      <div class="hero-ctas">
-        <a href="#pipeline" class="btn-primary">Explore the Pipeline</a>
-        <a href="#roadmap" class="btn-ghost">View Roadmap</a>
+      <p class="hero-eyebrow">India's First End-to-End Mobility Engineering Ecosystem</p>
+      <h1 class="hero-headline">From Bearings<br>to Rockets.</h1>
+      <p class="hero-sub">
+        Mobility Institution of India trains engineers the way industry actually works — domain-deep, output-first, placement-proven.
+      </p>
+      <div class="hero-actions">
+        <a href="#pipeline" class="btn btn-primary">Explore the Pipeline</a>
+        <a href="#enquiry" class="btn btn-outline">Enquire Now</a>
       </div>
     </div>
-    <div class="hero-spectrum" aria-hidden="true">
-      <span>Bearings</span>
-      <span>2W / 3W</span>
-      <span>4W</span>
-      <span>Trucks</span>
-      <span>Drones</span>
-      <span class="spectrum-last">Rockets</span>
-      <div class="spectrum-line"></div>
-      <div class="spectrum-labels">
-        <span>Ground</span>
-        <span>Space</span>
+    <div class="hero-spectrum">
+      <div class="spectrum-track">
+        <span>Bearings</span>
+        <span>2W / 3W</span>
+        <span>4W / Cars</span>
+        <span>Trucks</span>
+        <span>Drones & UAVs</span>
+        <span>Rockets & Spacecraft</span>
       </div>
-    </div>
-    <div class="hero-scroll-hint">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </header>
-
-  <!-- STAT STRIP -->
-  <section class="stat-strip">
-    <div class="stat-item">
-      <span class="stat-num" data-target="1500000">0</span>
-      <span class="stat-label">Engineers / Year in India</span>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat-item">
-      <span class="stat-num" data-target="0">Day 1</span>
-      <span class="stat-label">Employability Gap</span>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat-item">
-      <span class="stat-num" data-target="40">0</span>
-      <span class="stat-label">Year Legacy Project</span>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat-item">
-      <span class="stat-num" data-target="0">3–5</span>
-      <span class="stat-label">Students per Domain</span>
+      <div class="spectrum-line">
+        <span class="spectrum-label-left">Ground</span>
+        <span class="spectrum-label-right">Space</span>
+      </div>
     </div>
   </section>
 
   <!-- PROBLEM -->
-  <section class="section problem-section" id="problem">
+  <section id="about" class="section section-dark">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">The Problem</span>
-        <h2>India Has the Ingredients.<br/>But No Ecosystem.</h2>
-      </div>
+      <p class="section-eyebrow">The Problem We're Solving</p>
+      <h2 class="section-title">India Has the Ingredients.<br>But No Ecosystem.</h2>
       <div class="problem-grid">
-        <div class="problem-card" data-index="01">
-          <div class="problem-icon">⚙️</div>
-          <h3>1.5M Engineers/Year</h3>
-          <p>India produces massive engineering talent — but most are unemployable on Day 1 because they built nothing real.</p>
+        <div class="problem-card">
+          <div class="problem-stat">1.5M</div>
+          <p class="problem-label">Engineers / Year</p>
+          <p class="problem-desc">India produces massive engineering talent — but most are unemployable on Day 1 because they built nothing real.</p>
         </div>
-        <div class="problem-card" data-index="02">
-          <div class="problem-icon">🏛️</div>
-          <h3>No Industry-Academia Bridge</h3>
-          <p>Universities and OEMs exist in the same cities but operate in completely separate worlds. No MUNER equivalent exists in India.</p>
+        <div class="problem-card">
+          <div class="problem-icon">⚡</div>
+          <p class="problem-label">No Industry–Academia Bridge</p>
+          <p class="problem-desc">Universities and OEMs exist in the same cities but operate in completely separate worlds. No MUNER equivalent exists in India.</p>
         </div>
-        <div class="problem-card" data-index="03">
-          <div class="problem-icon">🔗</div>
-          <h3>No Mobility Ecosystem</h3>
-          <p>Pune, Chennai, Bangalore have world-class auto companies. Yet no institution brings them together with education into one living ecosystem.</p>
+        <div class="problem-card">
+          <div class="problem-icon">🏭</div>
+          <p class="problem-label">No Mobility Ecosystem</p>
+          <p class="problem-desc">Pune, Chennai, Bangalore have world-class auto companies. Yet no institution brings them together with education into one living ecosystem.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- DIFFERENT -->
-  <section class="section different-section" id="different">
+  <!-- WHY DIFFERENT -->
+  <section id="different" class="section section-light">
     <div class="container">
-      <div class="section-header center">
-        <span class="section-tag">Why We Are Different</span>
-        <h2>Not Another CAD Institute.</h2>
-      </div>
+      <p class="section-eyebrow">Why We're Different</p>
+      <h2 class="section-title">Not Another CAD Institute.</h2>
       <div class="compare-table">
-        <div class="compare-header">
-          <div class="compare-attr"></div>
-          <div class="compare-col other">Others<br/><small>(NIFD, CAD Centers)</small></div>
-          <div class="compare-col ours">This Institution</div>
+        <div class="compare-col compare-col-header">
+          <div class="compare-cell cell-head">&nbsp;</div>
+          <div class="compare-cell">Who we train</div>
+          <div class="compare-cell">Batch size</div>
+          <div class="compare-cell">What we teach</div>
+          <div class="compare-cell">Curriculum</div>
+          <div class="compare-cell">Success metric</div>
+          <div class="compare-cell">Awareness reach</div>
         </div>
-        <div class="compare-row">
-          <div class="compare-attr">Who they train</div>
-          <div class="compare-col other">Passouts, unemployed</div>
-          <div class="compare-col ours highlight">3rd &amp; Final year engineers</div>
+        <div class="compare-col compare-col-others">
+          <div class="compare-cell cell-head">Others</div>
+          <div class="compare-cell">Passouts, unemployed</div>
+          <div class="compare-cell">50–100 students</div>
+          <div class="compare-cell">Software commands</div>
+          <div class="compare-cell">Replaces your studies</div>
+          <div class="compare-cell">Certificates issued</div>
+          <div class="compare-cell">Only engineers</div>
         </div>
-        <div class="compare-row">
-          <div class="compare-attr">Batch size</div>
-          <div class="compare-col other">50–100 students</div>
-          <div class="compare-col ours highlight">3–5 per domain, deeply</div>
-        </div>
-        <div class="compare-row">
-          <div class="compare-attr">What they teach</div>
-          <div class="compare-col other">Software commands</div>
-          <div class="compare-col ours highlight">How industry actually works</div>
-        </div>
-        <div class="compare-row">
-          <div class="compare-attr">Curriculum</div>
-          <div class="compare-col other">Replaces your studies</div>
-          <div class="compare-col ours highlight">Runs parallel, complements</div>
-        </div>
-        <div class="compare-row">
-          <div class="compare-attr">Success metric</div>
-          <div class="compare-col other">Certificates issued</div>
-          <div class="compare-col ours highlight">Placed in top companies</div>
-        </div>
-        <div class="compare-row">
-          <div class="compare-attr">Awareness reach</div>
-          <div class="compare-col other">Only engineers</div>
-          <div class="compare-col ours highlight">From 10th grade onwards</div>
+        <div class="compare-col compare-col-mii">
+          <div class="compare-cell cell-head">MII</div>
+          <div class="compare-cell">3rd &amp; Final year engineers</div>
+          <div class="compare-cell">3–5 per domain, deeply</div>
+          <div class="compare-cell">How industry actually works</div>
+          <div class="compare-cell">Runs parallel, complements</div>
+          <div class="compare-cell">Placed in top companies</div>
+          <div class="compare-cell">From 10th grade onwards</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- PIPELINE -->
-  <section class="section pipeline-section" id="pipeline">
+  <section id="pipeline" class="section section-dark">
     <div class="container">
-      <div class="section-header center">
-        <span class="section-tag">The Pipeline</span>
-        <h2>Plant Early. Train Deep. Place High.</h2>
-      </div>
+      <p class="section-eyebrow">The Pipeline</p>
+      <h2 class="section-title">Plant Early. Train Deep.<br>Place High.</h2>
       <div class="pipeline-track">
-        <div class="pipeline-connector" aria-hidden="true"></div>
-        <div class="pipeline-step" data-step="01">
-          <div class="pipeline-dot"></div>
-          <div class="pipeline-content">
-            <div class="pipeline-stage">Stage 1</div>
-            <h3>Awareness</h3>
-            <p class="pipeline-who">10th, 11th, 12th</p>
-            <p>Introduce automotive &amp; industrial design as a real career path. Friendly books. Simple language. Ignite curiosity before they choose engineering.</p>
-          </div>
+        <div class="pipeline-step">
+          <div class="pipeline-stage">Stage 01</div>
+          <h3 class="pipeline-name">Awareness</h3>
+          <p class="pipeline-who">10th, 11th, 12th Students</p>
+          <p class="pipeline-desc">Introduce automotive &amp; industrial design as a real career path. Friendly books. Simple language. Ignite curiosity before they choose engineering.</p>
         </div>
-        <div class="pipeline-step" data-step="02">
-          <div class="pipeline-dot"></div>
-          <div class="pipeline-content">
-            <div class="pipeline-stage">Stage 2</div>
-            <h3>Training</h3>
-            <p class="pipeline-who">3rd &amp; Final Year Engineers</p>
-            <p>Parallel curriculum alongside regular studies. 3–5 students per domain. Real industry knowledge before they graduate. Not replacing — complementing.</p>
-          </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">
+          <div class="pipeline-stage">Stage 02</div>
+          <h3 class="pipeline-name">Training</h3>
+          <p class="pipeline-who">3rd &amp; Final Year Engineers</p>
+          <p class="pipeline-desc">Parallel curriculum alongside regular studies. 3–5 students per domain. Real industry knowledge before graduation — not replacing, complementing.</p>
         </div>
-        <div class="pipeline-step" data-step="03">
-          <div class="pipeline-dot"></div>
-          <div class="pipeline-content">
-            <div class="pipeline-stage">Stage 3</div>
-            <h3>Placement</h3>
-            <p class="pipeline-who">Top Companies in India</p>
-            <p>Within 12 months of training. Tier-1 suppliers, OEMs, design consultancies. Placement rate is the only metric that matters.</p>
-          </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">
+          <div class="pipeline-stage">Stage 03</div>
+          <h3 class="pipeline-name">Placement</h3>
+          <p class="pipeline-who">Top Companies in India</p>
+          <p class="pipeline-desc">Within 12 months of training. Tier-1 suppliers, OEMs, design consultancies. Placement rate is the only metric that matters.</p>
         </div>
       </div>
-      <div class="pipeline-flywheel">
-        <p>A 12th grader who reads your book → joins engineering → finds your curriculum → gets trained → gets placed → comes back as instructor.</p>
+      <div class="pipeline-loop">
+        A 12th grader who reads our book → joins engineering → finds our curriculum → gets trained → placed in industry → returns as instructor.
       </div>
     </div>
   </section>
 
   <!-- CURRICULUM -->
-  <section class="section curriculum-section" id="curriculum">
+  <section id="curriculum" class="section section-light">
     <div class="container">
-      <div class="section-header center">
-        <span class="section-tag">Curriculum &amp; The Book</span>
-        <h2>Two Tools That Don't Exist Yet.</h2>
-      </div>
-      <div class="curr-grid">
-        <div class="curr-card">
-          <div class="curr-label">The Parallel Curriculum</div>
-          <ul class="curr-list">
-            <li>Runs alongside regular engineering degree</li>
+      <p class="section-eyebrow">Curriculum &amp; The Book</p>
+      <h2 class="section-title">Two Tools That Don't Exist Yet.</h2>
+      <div class="curriculum-grid">
+        <div class="curriculum-card">
+          <div class="curriculum-tag">The Parallel Curriculum</div>
+          <ul class="curriculum-list">
+            <li>Runs alongside your regular engineering degree</li>
             <li>Designed for 3rd &amp; final year students</li>
             <li>Domain-specific — trim, BIW, wiring, seating</li>
             <li>Taught by real industry engineers</li>
-            <li><strong>Outcome: job-ready before graduation</strong></li>
+            <li>Outcome: job-ready before graduation</li>
           </ul>
         </div>
-        <div class="curr-divider" aria-hidden="true">+</div>
-        <div class="curr-card">
-          <div class="curr-label">The Book</div>
-          <ul class="curr-list">
+        <div class="curriculum-card curriculum-card-accent">
+          <div class="curriculum-tag">The Book</div>
+          <ul class="curriculum-list">
             <li>Written for 10th, 11th, 12th students</li>
             <li>Simple language — no engineering jargon</li>
             <li>Shows the full flow: idea to factory part</li>
-            <li><strong>The book nobody has written in India</strong></li>
+            <li>The book that nobody has written in India</li>
             <li>Top of the funnel for the entire pipeline</li>
           </ul>
         </div>
@@ -248,30 +188,28 @@
   </section>
 
   <!-- MODEL -->
-  <section class="section model-section" id="model">
+  <section id="model" class="section section-dark">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">The Model</span>
-        <h2>Every Classroom Builds Something Real.</h2>
-      </div>
+      <p class="section-eyebrow">The Model</p>
+      <h2 class="section-title">Every Classroom<br>Builds Something Real.</h2>
       <div class="model-grid">
-        <div class="model-card" data-num="01">
-          <div class="model-num">01</div>
+        <div class="model-item">
+          <span class="model-num">01</span>
           <h3>Learn &amp; Work Mode</h3>
           <p>Industry engineers teach how they actually work — trim, BIW reinforcement, wiring harness, seating structures. No theory without practice.</p>
         </div>
-        <div class="model-card" data-num="02">
-          <div class="model-num">02</div>
+        <div class="model-item">
+          <span class="model-num">02</span>
           <h3>Design + Engineering</h3>
           <p>Conceptual and industrial design merged with engineering. Students understand both the 'what' and the 'how'.</p>
         </div>
-        <div class="model-card" data-num="03">
-          <div class="model-num">03</div>
+        <div class="model-item">
+          <span class="model-num">03</span>
           <h3>Graduation = A Real Product</h3>
           <p>Every batch designs a complete vehicle — technology to hardware. Not a rendering. A deliverable. Your name is on it.</p>
         </div>
-        <div class="model-card" data-num="04">
-          <div class="model-num">04</div>
+        <div class="model-item">
+          <span class="model-num">04</span>
           <h3>Industry as Client</h3>
           <p>Companies bring real briefs. Students solve them. Companies get production-ready designs. Institution earns revenue and credibility.</p>
         </div>
@@ -279,47 +217,16 @@
     </div>
   </section>
 
-  <!-- GOVERNANCE -->
-  <section class="section ownership-section" id="ownership">
-    <div class="container">
-      <div class="section-header center">
-        <span class="section-tag">Ownership &amp; Governance</span>
-        <h2>The Students Own It.<br/>Not the Founders.</h2>
-      </div>
-      <div class="ownership-timeline">
-        <div class="own-item">
-          <div class="own-gen">Gen 1–5</div>
-          <div class="own-title">Shape the DNA</div>
-          <p>First five batches teach us what to improve. They define the culture, the curriculum, the values.</p>
-        </div>
-        <div class="own-arrow">→</div>
-        <div class="own-item">
-          <div class="own-gen">Gen 6+</div>
-          <div class="own-title">Active Innovators</div>
-          <p>Later generations actively participate in innovating. They inherit and evolve what the founders started.</p>
-        </div>
-        <div class="own-arrow">→</div>
-        <div class="own-item">
-          <div class="own-gen">Decade 3+</div>
-          <div class="own-title">Compete with Planets</div>
-          <p>The institution benchmarks not against other countries but against the limits of human mobility capability.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ROADMAP -->
-  <section class="section roadmap-section" id="roadmap">
+  <section id="roadmap" class="section section-light">
     <div class="container">
-      <div class="section-header center">
-        <span class="section-tag">The 40-Year Roadmap</span>
-        <h2>A Legacy Project. Not a Startup.</h2>
-      </div>
+      <p class="section-eyebrow">The 40-Year Roadmap</p>
+      <h2 class="section-title">A Legacy Project.<br>Not a Startup.</h2>
       <div class="roadmap-track">
-        <div class="roadmap-item active">
-          <div class="roadmap-era">20s</div>
-          <div class="roadmap-years">Now — 2033</div>
-          <h3>Build the Foundation</h3>
+        <div class="roadmap-phase">
+          <div class="roadmap-decade">20s</div>
+          <div class="roadmap-period">Now – 2033</div>
+          <h3 class="roadmap-phase-name">Build the Foundation</h3>
           <ul>
             <li>Enter industry</li>
             <li>Earn real experience</li>
@@ -327,21 +234,23 @@
             <li>Find like-minded engineers</li>
           </ul>
         </div>
-        <div class="roadmap-item">
-          <div class="roadmap-era">30s</div>
-          <div class="roadmap-years">2033 — 2043</div>
-          <h3>Launch the Training Institute</h3>
+        <div class="roadmap-connector"></div>
+        <div class="roadmap-phase">
+          <div class="roadmap-decade">30s</div>
+          <div class="roadmap-period">2033 – 2043</div>
+          <h3 class="roadmap-phase-name">Launch Training Institute</h3>
           <ul>
             <li>Small automotive training center</li>
             <li>3–5 students per domain</li>
             <li>School awareness program</li>
-            <li>Write and publish the book</li>
+            <li>Write &amp; publish the book</li>
           </ul>
         </div>
-        <div class="roadmap-item">
-          <div class="roadmap-era">40s–50s</div>
-          <div class="roadmap-years">2043+</div>
-          <h3>Build the Institution</h3>
+        <div class="roadmap-connector"></div>
+        <div class="roadmap-phase">
+          <div class="roadmap-decade">40s–50s</div>
+          <div class="roadmap-period">2043+</div>
+          <h3 class="roadmap-phase-name">Build the Institution</h3>
           <ul>
             <li>Add vehicle segments</li>
             <li>Expand to drones &amp; aerospace</li>
@@ -354,80 +263,123 @@
   </section>
 
   <!-- VISION -->
-  <section class="section vision-section" id="vision">
+  <section id="vision" class="section section-vision">
     <div class="container">
-      <div class="section-header center">
-        <span class="section-tag">The Vision</span>
-        <h2>Don't Compete With Other Countries.<br/>Compete With Other Planets.</h2>
-      </div>
-      <p class="vision-sub">An institution that doesn't grant degrees — it puts your name on something real that exists in the world.</p>
-
-      <div class="spectrum-full">
-        <div class="spectrum-items">
-          <div class="spectrum-item">
-            <div class="spectrum-icon">⚙️</div>
-            <span>Bearings &amp; Mechanisms</span>
-          </div>
-          <div class="spectrum-item">
-            <div class="spectrum-icon">🛵</div>
-            <span>2W / 3W</span>
-          </div>
-          <div class="spectrum-item">
-            <div class="spectrum-icon">🚗</div>
-            <span>4W / Cars</span>
-          </div>
-          <div class="spectrum-item">
-            <div class="spectrum-icon">🚛</div>
-            <span>Trucks &amp; Heavy Eng.</span>
-          </div>
-          <div class="spectrum-item">
-            <div class="spectrum-icon">🚁</div>
-            <span>Drones &amp; UAVs</span>
-          </div>
-          <div class="spectrum-item spectrum-item-last">
-            <div class="spectrum-icon">🚀</div>
-            <span>Rockets &amp; Spacecraft</span>
-          </div>
-        </div>
-        <div class="spectrum-bar">
-          <div class="spectrum-fill"></div>
-        </div>
-        <div class="spectrum-axis">
-          <span>Ground</span>
-          <span>Space</span>
-        </div>
+      <p class="section-eyebrow light">The Vision</p>
+      <h2 class="vision-headline">Don't Compete With<br>Other Countries.<br>Compete With<br>Other Planets.</h2>
+      <p class="vision-sub">
+        An institution that doesn't grant degrees — it puts your name on something real that exists in the world.
+      </p>
+      <div class="vision-output">
+        <p class="output-line">The output of this institution is not graduates.</p>
+        <p class="output-line output-bold">The output is <span class="highlight">innovations.</span></p>
       </div>
     </div>
   </section>
 
-  <!-- OUTRO / CTA -->
-  <section class="outro-section" id="apply">
-    <div class="container">
-      <div class="outro-mono">The output of this institution is not graduates.</div>
-      <div class="outro-big">The output is<br/><span class="outro-accent">Innovations.</span></div>
-      <p class="outro-caption">This vision started today. The training institute starts in the 30s. The world sees the institution in the 60s.</p>
-      <a href="mailto:connect@mobilityinstitution.in" class="btn-primary btn-large">Get in Touch</a>
+  <!-- ENQUIRY FORM -->
+  <section id="enquiry" class="section section-light">
+    <div class="container container-narrow">
+      <p class="section-eyebrow">Get in Touch</p>
+      <h2 class="section-title">Submit an Enquiry</h2>
+      <p class="form-intro">Whether you're a student, parent, industry engineer, or potential partner — we'd like to hear from you.</p>
+
+      <div id="form-success" class="form-success hidden">
+        <div class="success-icon">✓</div>
+        <p>Your enquiry has been submitted. We'll be in touch soon.</p>
+      </div>
+
+      <div id="form-wrap">
+        <div class="field-row">
+          <div class="field-group">
+            <label for="fname">First Name <span class="req">*</span></label>
+            <input type="text" id="fname" placeholder="Arjun" />
+            <span class="field-error" id="err-fname"></span>
+          </div>
+          <div class="field-group">
+            <label for="lname">Last Name <span class="req">*</span></label>
+            <input type="text" id="lname" placeholder="Sharma" />
+            <span class="field-error" id="err-lname"></span>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="email">Email Address <span class="req">*</span></label>
+          <input type="email" id="email" placeholder="arjun@example.com" />
+          <span class="field-error" id="err-email"></span>
+        </div>
+
+        <div class="field-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="+91 98765 43210" />
+        </div>
+
+        <div class="field-group">
+          <label for="category">I am a <span class="req">*</span></label>
+          <select id="category">
+            <option value="">— Select —</option>
+            <option value="school-student">School Student (10th–12th)</option>
+            <option value="engineering-student">Engineering Student</option>
+            <option value="parent">Parent / Guardian</option>
+            <option value="industry-engineer">Industry Engineer / Professional</option>
+            <option value="institution">Institution / OEM / Partner</option>
+            <option value="other">Other</option>
+          </select>
+          <span class="field-error" id="err-category"></span>
+        </div>
+
+        <div class="field-group">
+          <label for="interest">Area of Interest</label>
+          <select id="interest">
+            <option value="">— Select —</option>
+            <option value="awareness">Awareness Program (School)</option>
+            <option value="curriculum">Parallel Curriculum Training</option>
+            <option value="placement">Placement Support</option>
+            <option value="industry-partnership">Industry Partnership</option>
+            <option value="the-book">The Book</option>
+            <option value="general">General Information</option>
+          </select>
+        </div>
+
+        <div class="field-group">
+          <label for="message">Message <span class="req">*</span></label>
+          <textarea id="message" rows="5" placeholder="Tell us about yourself and what you're looking for..."></textarea>
+          <span class="field-error" id="err-message"></span>
+        </div>
+
+        <div class="field-group field-check">
+          <label class="check-label">
+            <input type="checkbox" id="consent" />
+            <span>I agree to be contacted by Mobility Institution of India regarding my enquiry.</span>
+          </label>
+          <span class="field-error" id="err-consent"></span>
+        </div>
+
+        <button class="btn btn-primary btn-submit" id="submit-btn" type="button">
+          Submit Enquiry
+        </button>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
+  <footer id="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <span class="footer-logo">MEI</span>
-        <p>The Mobility Engineering Institution<br/>A 40-Year Legacy Project</p>
+        <span class="logo-mii">MII</span>
+        <p>Mobility Institution of India</p>
+        <p class="footer-tagline">From Bearings to Rockets.</p>
       </div>
-      <div class="footer-links">
-        <a href="#problem">Problem</a>
+      <nav class="footer-nav">
+        <a href="#about">About</a>
         <a href="#pipeline">Pipeline</a>
         <a href="#curriculum">Curriculum</a>
         <a href="#model">Model</a>
         <a href="#roadmap">Roadmap</a>
         <a href="#vision">Vision</a>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2025 The Mobility Engineering Institution. Conceived in India.</span>
-      </div>
+        <a href="#enquiry">Enquire</a>
+      </nav>
+      <p class="footer-copy">© 2025 Mobility Institution of India. A 40-year legacy project.</p>
     </div>
   </footer>
 
