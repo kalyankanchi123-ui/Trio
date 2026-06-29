@@ -8,13 +8,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <!-- Always scroll to top on page load / refresh -->
+  <script>if (history.scrollRestoration) history.scrollRestoration = 'manual'; window.scrollTo(0, 0);</script>
 </head>
 <body>
 
   <!-- NAV -->
   <nav id="navbar">
     <div class="nav-inner">
-      <a href="#hero" class="nav-logo">
+      <a href="/" class="nav-logo" id="logo-link">
         <span class="logo-mii">MII</span>
         <span class="logo-full">Mobility Institution of India</span>
       </a>
@@ -289,61 +291,70 @@
         <p>Your enquiry has been submitted. We'll be in touch soon.</p>
       </div>
 
+      <!--
+        ═══════════════════════════════════════════════════════════
+        EMAIL SETUP (one-time, 1 minute):
+        1. Log in at https://web3forms.com
+        2. Go to Dashboard → Access Keys → copy your key
+        3. Open script.js, find WEB3FORMS_KEY and paste it there
+        Every submission will be emailed to your account instantly.
+        ═══════════════════════════════════════════════════════════
+      -->
       <div id="form-wrap">
         <div class="field-row">
           <div class="field-group">
             <label for="fname">First Name <span class="req">*</span></label>
-            <input type="text" id="fname" placeholder="Arjun" />
+            <input type="text" id="fname" name="firstName" placeholder="Arjun" />
             <span class="field-error" id="err-fname"></span>
           </div>
           <div class="field-group">
             <label for="lname">Last Name <span class="req">*</span></label>
-            <input type="text" id="lname" placeholder="Sharma" />
+            <input type="text" id="lname" name="lastName" placeholder="Sharma" />
             <span class="field-error" id="err-lname"></span>
           </div>
         </div>
 
         <div class="field-group">
           <label for="email">Email Address <span class="req">*</span></label>
-          <input type="email" id="email" placeholder="arjun@example.com" />
+          <input type="email" id="email" name="email" placeholder="arjun@example.com" />
           <span class="field-error" id="err-email"></span>
         </div>
 
         <div class="field-group">
           <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" placeholder="+91 98765 43210" />
+          <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" />
         </div>
 
         <div class="field-group">
           <label for="category">I am a <span class="req">*</span></label>
-          <select id="category">
+          <select id="category" name="category">
             <option value="">— Select —</option>
-            <option value="school-student">School Student (10th–12th)</option>
-            <option value="engineering-student">Engineering Student</option>
-            <option value="parent">Parent / Guardian</option>
-            <option value="industry-engineer">Industry Engineer / Professional</option>
-            <option value="institution">Institution / OEM / Partner</option>
-            <option value="other">Other</option>
+            <option value="School Student (10th–12th)">School Student (10th–12th)</option>
+            <option value="Engineering Student">Engineering Student</option>
+            <option value="Parent / Guardian">Parent / Guardian</option>
+            <option value="Industry Engineer / Professional">Industry Engineer / Professional</option>
+            <option value="Institution / OEM / Partner">Institution / OEM / Partner</option>
+            <option value="Other">Other</option>
           </select>
           <span class="field-error" id="err-category"></span>
         </div>
 
         <div class="field-group">
           <label for="interest">Area of Interest</label>
-          <select id="interest">
+          <select id="interest" name="interest">
             <option value="">— Select —</option>
-            <option value="awareness">Awareness Program (School)</option>
-            <option value="curriculum">Parallel Curriculum Training</option>
-            <option value="placement">Placement Support</option>
-            <option value="industry-partnership">Industry Partnership</option>
-            <option value="the-book">The Book</option>
-            <option value="general">General Information</option>
+            <option value="Awareness Program (School)">Awareness Program (School)</option>
+            <option value="Parallel Curriculum Training">Parallel Curriculum Training</option>
+            <option value="Placement Support">Placement Support</option>
+            <option value="Industry Partnership">Industry Partnership</option>
+            <option value="The Book">The Book</option>
+            <option value="General Information">General Information</option>
           </select>
         </div>
 
         <div class="field-group">
           <label for="message">Message <span class="req">*</span></label>
-          <textarea id="message" rows="5" placeholder="Tell us about yourself and what you're looking for..."></textarea>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about yourself and what you're looking for..."></textarea>
           <span class="field-error" id="err-message"></span>
         </div>
 
