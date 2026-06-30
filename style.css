@@ -161,10 +161,12 @@ ul { list-style: none; }
   gap: 0.65rem;
 }
 .logo-icon-img {
-  height: 42px;
+  height: 52px;
   width: auto;
   display: block;
   object-fit: contain;
+  mix-blend-mode: lighten;
+  filter: brightness(1.05) contrast(1.05);
 }
 .logo-full {
   font-family: var(--body);
@@ -889,7 +891,7 @@ ul { list-style: none; }
   gap: 2rem;
   text-align: center;
 }
-.footer-brand .footer-logo-img { height: 76px; width: auto; display: block; margin: 0 auto 0.6rem; }
+.footer-brand .footer-logo-img { height: 100px; width: auto; display: block; margin: 0 auto 0.6rem; mix-blend-mode: lighten; filter: brightness(1.05) contrast(1.05); }
 .footer-brand p { font-size: 0.85rem; color: var(--text-body); }
 .footer-tagline {
   font-family: var(--mono) !important;
