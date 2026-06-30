@@ -6,7 +6,7 @@
 (function () {
   'use strict';
 
-  /* ---------- ALWAYS START AT TOP ---------- */
+   /* ---------- ALWAYS START AT TOP ---------- */
   window.scrollTo(0, 0);
 
   /* ---------- LOGO → SCROLL TO TOP ---------- */
