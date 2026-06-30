@@ -314,18 +314,19 @@ ul { list-style: none; }
   gap: 0;
   overflow-x: auto;
   scrollbar-width: none;
+  padding-right: 1.5rem;
 }
 .spectrum-track::-webkit-scrollbar { display: none; }
 .spectrum-track span {
   flex: 1;
-  min-width: 90px;
+  min-width: 110px;
   text-align: center;
   font-family: var(--mono);
-  font-size: 0.65rem;
-  letter-spacing: 0.08em;
+  font-size: 0.6rem;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-muted);
-  padding: 0.6rem 0.4rem;
+  padding: 0.6rem 0.6rem;
   border-top: 2px solid var(--border-dark);
   white-space: nowrap;
   transition: color var(--transition), border-color var(--transition);
