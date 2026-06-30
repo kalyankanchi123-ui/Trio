@@ -811,12 +811,39 @@ ul { list-style: none; }
   line-height: 1.5;
 }
 .check-label input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
   width: 18px;
   height: 18px;
   flex-shrink: 0;
   margin-top: 2px;
-  accent-color: var(--accent);
+  border: 1.5px solid var(--light-border);
+  border-radius: 4px;
+  background: var(--white);
   cursor: pointer;
+  position: relative;
+  transition: background var(--transition), border-color var(--transition);
+}
+.check-label input[type="checkbox"]:hover {
+  border-color: var(--accent);
+}
+.check-label input[type="checkbox"]:checked {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.check-label input[type="checkbox"]:checked::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 9px;
+  border: solid var(--white);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.check-label input[type="checkbox"]:focus-visible {
+  box-shadow: 0 0 0 3px var(--accent-dim);
 }
 
 /* Success */
