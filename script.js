@@ -133,7 +133,7 @@
      Every submission will be emailed to the address
      linked to your Web3Forms account immediately.
   ===================================================== */
-  const WEB3FORMS_KEY = '3d086dde-5ca0-4546-945a-9665a09a3252'; // ← paste your key here
+  const WEB3FORMS_KEY = 'YOUR_WEB3FORMS_ACCESS_KEY'; // ← paste your key here
 
   const submitBtn   = document.getElementById('submit-btn');
   const formWrap    = document.getElementById('form-wrap');
